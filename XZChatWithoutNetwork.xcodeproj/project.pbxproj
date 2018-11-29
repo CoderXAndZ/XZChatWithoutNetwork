@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8409680121A8D9BB003354F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409680021A8D9BB003354F5 /* AppDelegate.swift */; };
+		8409680321A8D9BB003354F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409680221A8D9BB003354F5 /* ViewController.swift */; };
+		8409680621A8D9BB003354F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8409680421A8D9BB003354F5 /* Main.storyboard */; };
+		8409680821A8D9BE003354F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8409680721A8D9BE003354F5 /* Assets.xcassets */; };
+		8409680B21A8D9BE003354F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8409680921A8D9BE003354F5 /* LaunchScreen.storyboard */; };
+		8409681421A8DCA9003354F5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8409681321A8DCA9003354F5 /* CFNetwork.framework */; };
+		8409681621A8DCFB003354F5 /* XZSocketTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409681521A8DCFB003354F5 /* XZSocketTool.swift */; };
+		8409681D21A8DF9E003354F5 /* Pods_XZChatWithoutNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8409681C21A8DF9E003354F5 /* Pods_XZChatWithoutNetwork.framework */; };
+		8409682621A93125003354F5 /* XZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409682321A93125003354F5 /* XZMainViewController.swift */; };
+		8409682721A93125003354F5 /* XZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409682421A93125003354F5 /* XZNavigationController.swift */; };
+		8409682821A93125003354F5 /* XZBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409682521A93125003354F5 /* XZBaseViewController.swift */; };
+		8409682B21A931A1003354F5 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409682A21A931A1003354F5 /* Bundle+Extension.swift */; };
+		8409682D21A93261003354F5 /* XZChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409682C21A93261003354F5 /* XZChatController.swift */; };
+		8409682F21A93277003354F5 /* XZFriendsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409682E21A93277003354F5 /* XZFriendsListController.swift */; };
+		8409683221A93340003354F5 /* XZAddFriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409683121A93340003354F5 /* XZAddFriendController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		732852B1D7746D9F2BEA9BDE /* Pods-XZChatWithoutNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZChatWithoutNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XZChatWithoutNetwork/Pods-XZChatWithoutNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		840967FD21A8D9BB003354F5 /* XZChatWithoutNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZChatWithoutNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409680021A8D9BB003354F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8409680221A8D9BB003354F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8409680521A8D9BB003354F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8409680721A8D9BE003354F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8409680A21A8D9BE003354F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8409680C21A8D9BE003354F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8409681321A8DCA9003354F5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8409681521A8DCFB003354F5 /* XZSocketTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZSocketTool.swift; sourceTree = "<group>"; };
+		8409681821A8DDF9003354F5 /* XZChatWithoutNetwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XZChatWithoutNetwork-Bridging-Header.h"; sourceTree = "<group>"; };
+		8409681C21A8DF9E003354F5 /* Pods_XZChatWithoutNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_XZChatWithoutNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8409682321A93125003354F5 /* XZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZMainViewController.swift; sourceTree = "<group>"; };
+		8409682421A93125003354F5 /* XZNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZNavigationController.swift; sourceTree = "<group>"; };
+		8409682521A93125003354F5 /* XZBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZBaseViewController.swift; sourceTree = "<group>"; };
+		8409682A21A931A1003354F5 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		8409682C21A93261003354F5 /* XZChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZChatController.swift; sourceTree = "<group>"; };
+		8409682E21A93277003354F5 /* XZFriendsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZFriendsListController.swift; sourceTree = "<group>"; };
+		8409683121A93340003354F5 /* XZAddFriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZAddFriendController.swift; sourceTree = "<group>"; };
+		C1D67E24AA23E3718E60FAFA /* Pods-XZChatWithoutNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZChatWithoutNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-XZChatWithoutNetwork/Pods-XZChatWithoutNetwork.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840967FA21A8D9BB003354F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8409681D21A8DF9E003354F5 /* Pods_XZChatWithoutNetwork.framework in Frameworks */,
+				8409681421A8DCA9003354F5 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E7572BDA74FD19C9F4480C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				732852B1D7746D9F2BEA9BDE /* Pods-XZChatWithoutNetwork.debug.xcconfig */,
+				C1D67E24AA23E3718E60FAFA /* Pods-XZChatWithoutNetwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		840967F421A8D9BB003354F5 = {
+			isa = PBXGroup;
+			children = (
+				840967FF21A8D9BB003354F5 /* XZChatWithoutNetwork */,
+				840967FE21A8D9BB003354F5 /* Products */,
+				8409681221A8DC9E003354F5 /* Frameworks */,
+				3E7572BDA74FD19C9F4480C9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		840967FE21A8D9BB003354F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840967FD21A8D9BB003354F5 /* XZChatWithoutNetwork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840967FF21A8D9BB003354F5 /* XZChatWithoutNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				8409681F21A93098003354F5 /* Class */,
+				8409681521A8DCFB003354F5 /* XZSocketTool.swift */,
+				8409680421A8D9BB003354F5 /* Main.storyboard */,
+				8409680721A8D9BE003354F5 /* Assets.xcassets */,
+				8409680921A8D9BE003354F5 /* LaunchScreen.storyboard */,
+				8409680C21A8D9BE003354F5 /* Info.plist */,
+				8409681821A8DDF9003354F5 /* XZChatWithoutNetwork-Bridging-Header.h */,
+			);
+			path = XZChatWithoutNetwork;
+			sourceTree = "<group>";
+		};
+		8409681221A8DC9E003354F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8409681C21A8DF9E003354F5 /* Pods_XZChatWithoutNetwork.framework */,
+				8409681321A8DCA9003354F5 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8409681F21A93098003354F5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				8409680021A8D9BB003354F5 /* AppDelegate.swift */,
+				8409682921A93197003354F5 /* Extension */,
+				8409683021A9332C003354F5 /* AddFriend */,
+				8409682221A93117003354F5 /* Main */,
+				8409682121A930C5003354F5 /* Chat */,
+				8409682021A930A3003354F5 /* FriendsList */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		8409682021A930A3003354F5 /* FriendsList */ = {
+			isa = PBXGroup;
+			children = (
+				8409682E21A93277003354F5 /* XZFriendsListController.swift */,
+			);
+			path = FriendsList;
+			sourceTree = "<group>";
+		};
+		8409682121A930C5003354F5 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8409680221A8D9BB003354F5 /* ViewController.swift */,
+				8409682C21A93261003354F5 /* XZChatController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8409682221A93117003354F5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8409682521A93125003354F5 /* XZBaseViewController.swift */,
+				8409682321A93125003354F5 /* XZMainViewController.swift */,
+				8409682421A93125003354F5 /* XZNavigationController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8409682921A93197003354F5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8409682A21A931A1003354F5 /* Bundle+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8409683021A9332C003354F5 /* AddFriend */ = {
+			isa = PBXGroup;
+			children = (
+				8409683121A93340003354F5 /* XZAddFriendController.swift */,
+			);
+			path = AddFriend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840967FC21A8D9BB003354F5 /* XZChatWithoutNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8409680F21A8D9BE003354F5 /* Build configuration list for PBXNativeTarget "XZChatWithoutNetwork" */;
+			buildPhases = (
+				25DBAE8E6DD0F218267999B8 /* [CP] Check Pods Manifest.lock */,
+				840967F921A8D9BB003354F5 /* Sources */,
+				840967FA21A8D9BB003354F5 /* Frameworks */,
+				840967FB21A8D9BB003354F5 /* Resources */,
+				6CF8786587BCB408E86505A1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XZChatWithoutNetwork;
+			productName = XZChatWithoutNetwork;
+			productReference = 840967FD21A8D9BB003354F5 /* XZChatWithoutNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840967F521A8D9BB003354F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					840967FC21A8D9BB003354F5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 840967F821A8D9BB003354F5 /* Build configuration list for PBXProject "XZChatWithoutNetwork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840967F421A8D9BB003354F5;
+			productRefGroup = 840967FE21A8D9BB003354F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840967FC21A8D9BB003354F5 /* XZChatWithoutNetwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840967FB21A8D9BB003354F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8409680B21A8D9BE003354F5 /* LaunchScreen.storyboard in Resources */,
+				8409680821A8D9BE003354F5 /* Assets.xcassets in Resources */,
+				8409680621A8D9BB003354F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25DBAE8E6DD0F218267999B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XZChatWithoutNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF8786587BCB408E86505A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XZChatWithoutNetwork/Pods-XZChatWithoutNetwork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XZChatWithoutNetwork/Pods-XZChatWithoutNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840967F921A8D9BB003354F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8409680321A8D9BB003354F5 /* ViewController.swift in Sources */,
+				8409682B21A931A1003354F5 /* Bundle+Extension.swift in Sources */,
+				8409681621A8DCFB003354F5 /* XZSocketTool.swift in Sources */,
+				8409683221A93340003354F5 /* XZAddFriendController.swift in Sources */,
+				8409682721A93125003354F5 /* XZNavigationController.swift in Sources */,
+				8409680121A8D9BB003354F5 /* AppDelegate.swift in Sources */,
+				8409682621A93125003354F5 /* XZMainViewController.swift in Sources */,
+				8409682821A93125003354F5 /* XZBaseViewController.swift in Sources */,
+				8409682F21A93277003354F5 /* XZFriendsListController.swift in Sources */,
+				8409682D21A93261003354F5 /* XZChatController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8409680421A8D9BB003354F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8409680521A8D9BB003354F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8409680921A8D9BE003354F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8409680A21A8D9BE003354F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8409680D21A8D9BE003354F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8409680E21A8D9BE003354F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8409681021A8D9BE003354F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732852B1D7746D9F2BEA9BDE /* Pods-XZChatWithoutNetwork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9R3AAQJED;
+				INFOPLIST_FILE = XZChatWithoutNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.XZChatWithoutNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XZChatWithoutNetwork/XZChatWithoutNetwork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8409681121A8D9BE003354F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D67E24AA23E3718E60FAFA /* Pods-XZChatWithoutNetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9R3AAQJED;
+				INFOPLIST_FILE = XZChatWithoutNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.XZChatWithoutNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XZChatWithoutNetwork/XZChatWithoutNetwork-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840967F821A8D9BB003354F5 /* Build configuration list for PBXProject "XZChatWithoutNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8409680D21A8D9BE003354F5 /* Debug */,
+				8409680E21A8D9BE003354F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8409680F21A8D9BE003354F5 /* Build configuration list for PBXNativeTarget "XZChatWithoutNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8409681021A8D9BE003354F5 /* Debug */,
+				8409681121A8D9BE003354F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840967F521A8D9BB003354F5 /* Project object */;
+}
